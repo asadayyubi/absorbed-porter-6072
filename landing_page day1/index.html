@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style/index.css">
+    <title>olx</title>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <img src="image/olx_logo.png" alt="">
+
+            <div class="country_select" id="country">
+                <div class="select">
+                    <p id="text"><i class="fa-ls fa-solid fa-magnifying-glass"></i> Select Your Country</p>
+                    <i class="fa-solid fa-chevron-down" id="down"></i>
+                </div>
+
+                <ul class="option_box" id="list">
+                    <li class="option" onclick="myFunction('USA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>USA</p>
+                    </li>
+                    <li class="option" onclick="myFunction('CANADA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>CANADA</p>
+                    </li>
+                    <li class="option" onclick="myFunction('AUSTRALIA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>AUSTRALIA</p>
+                    </li>
+                    <li class="option" onclick="myFunction('AFRICA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>AFRICA</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="search_box">
+                <input type="text" class="searchClass" id="searchId" placeholder="Find Cars, Mobile Phones and more...">
+                <p><i class="fa-solid fa-magnifying-glass"></i></p>
+            </div>
+
+            <div class="language">
+                <p id="eng">English<i class="fa-solid fa-chevron-down" id="down"></i></p>
+                <ul class="hindi">
+                    <li onclick="lang('हिन्दी')">हिन्दी</li>
+                    <li onclick="lang('English')">English</li>
+                </ul>
+            </div>
+
+            <div class="your_logo">
+                <div class="girl_img" id="girl_img">
+                    <img src="image/pic3.jpg" alt="">
+                </div>
+
+            <div class="dropdown" id="dropdownid">
+                <div class="name">
+                    <img src="image/pic3.jpg" alt="">
+                   <p>Alberto</p>
+                </div>
+                <ul>
+                    <li>
+                       <i class="fa fa-regular fa-user"></i> 
+                       <p>My Account</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-box"></i>
+                        <p>My Orders</p>
+                     </li>
+                     <li>
+                        <i class="fa fa-regular fa-circle-question"></i> 
+                        <p>Help</p>
+                     </li>
+                     <li>
+                        <i class="fa fa-solid fa-gear"></i> 
+                        <p>Setting</p>
+                     </li>
+                     <li>
+                        <i class="fa fa-right-from-bracket"></i> 
+                        <p>Log Out</p>
+                     </li>
+                </ul>
+            </div>
+        </div>
+            <div class="selling">
+                <button><i class="fa-solid fa-plus"></i>
+                <p>SELL</p>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="download_app">
+        <div class="download">
+            <img src="image/footar.jpg" class="image" alt="">
+            <div class="text">
+                <h1>TRY THE OLX APP</h1>
+                <p>Buy, sell and find just about anything using <br> the app on your mobile.</p>
+            </div>
+            <div class="download_store">
+                <p>GET YOUR APP TODAY</p>
+                <img src="image/play store.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer class="main_footer">
+        <div class="footer">
+            <div class="footer_box">
+                <h2>POPULAR LOCATIONS</h2>
+                <P>Kolkata</P>
+                <p>Mumbai</p>
+                <p>Chennai</p>
+                <p>Pune</p>
+            </div>
+            <div class="footer_box">
+                <h2>POPULAR LOCATIONS</h2>
+                <P>Kolkata</P>
+                <p>Mumbai</p>
+                <p>Chennai</p>
+                <p>Pune</p>
+            </div>
+            <div class="footer_box">
+                <h2>POPULAR LOCATIONS</h2>
+                <P>Kolkata</P>
+                <p>Mumbai</p>
+                <p>Chennai</p>
+                <p>Pune</p>
+            </div>
+            <div class="footer_box">
+                <h2>POPULAR LOCATIONS</h2>
+                <P>Kolkata</P>
+                <p>Mumbai</p>
+                <p>Chennai</p>
+                <p>Pune</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="script/index.js"></script>
+</html>
