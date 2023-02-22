@@ -1,0 +1,168 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f4f4f4;
+    font-family: 'Comfortaa', cursive;
+}
+
+.side-nav{
+    width: 20%;
+    height: 745px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.top-nav{
+    background-color: white;
+    width: 80%;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    
+}
+.main-section{
+    display: flex;
+
+}
+
+
+ .card-div-top-section{
+    display: flex;
+    margin: auto;
+    margin-top: 150px;
+}
+  
+.card-div-top-section div{
+   background-color: white;
+   width: 200px;
+   height: 120px;
+   margin: auto;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+} 
+
+
+#site-logo{
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+
+
+
+#logout-img{
+    width: 18px;
+    position: relative;
+    top: 3px;
+    
+}
+
+
+.btns{
+    margin-top: 50px;
+    
+}
+
+.btns>div:first-child>p{
+    margin-left: 30px;
+    color: rgba(255, 255, 255, 0.66);
+    
+}
+
+.btns>div:nth-child(2)>p{
+    margin-left: 30px;
+    color: rgba(255, 255, 255, 0.66);
+    
+}
+
+
+.btn-div{
+    border:1px  solid  rgba(255, 255, 255, 0.358);
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    cursor: pointer;
+}
+
+#dashboard-png{
+    width: 30px;
+    /* position: relative;
+    top: 5px;
+    right: 10px; */
+}
+
+#users-png{
+    width: 40px;
+    position: relative;
+    top: 5px;
+
+}
+
+
+#logout{
+    padding: 1px;
+    width: 50%;
+    margin: auto;
+    margin-top: 380px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#logout>h2{
+    color: black;
+    font-size: 18px;
+    
+
+}
+
+
+#search-box{
+    margin-left: 300px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 30px  0px 0px 30px;
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.623);
+}
+
+.Db{
+    display: inline;
+    margin-left: 20px;
+}
+#search-btn{
+    /* width: 200px; */
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.623);
+    border-radius: 0px  30px 30px 0px;
+    margin-top: 35px;
+    color: rgba(255, 255, 255, 0.701);
+    background-color: rgba(0, 0, 0, 0.881);
+    margin-left: -6px;
+    cursor: pointer;
+
+}
+
+
+
+#admin-info{
+    width: 10%;
+    display: flex;
+    margin-left: 87%;
+    margin-top: -45px;
+
+}
+
+#admin-info>img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 8px;
+}
+
+#admin-info>p{
+    margin-left: 5px;
+}
