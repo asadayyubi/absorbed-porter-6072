@@ -12,17 +12,18 @@ adminbtn.addEventListener("click",()=>{
 })
 
 
-let User_tab=document.getElementById("user-tab")
+let db_tab=document.getElementById("db-tab")
 
-User_tab.addEventListener("click",function(){
+db_tab.addEventListener("click",function(){
+    location.href=`admin.html`
+})
+
+let user_tab=document.getElementById("user-div");
+
+user_tab.addEventListener("click",()=>{
     location.href=`user.html`
 })
 
-let product_div=document.getElementById("product-div")
-
-product_div.addEventListener("click",()=>{
-    location.href=`product.html`
-})
 
 
 let login_Data=JSON.parse(localStorage.getItem("login"))||[]
@@ -33,7 +34,6 @@ let Admin_name=document.getElementById("Admin-name")
 login_Data.forEach(element => {
     Admin_name.innerText = `Hii ${element.name}`
 });
-
 
 let logout_btn=document.getElementById("logout")
 

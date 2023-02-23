@@ -27,17 +27,20 @@ body{
  .card-div-top-section{
     display: flex;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 50px;
 }
   
 .card-div-top-section div{
    background-color: white;
-   width: 200px;
-   height: 120px;
+   width: 70%;
+   height: 580px;
    margin: auto;
-   border-radius: 5px;
-   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 } 
+
+.card-div-top-section div>h2{
+    text-align: center;
+}
 
 
 #site-logo{
@@ -59,7 +62,7 @@ body{
 
 
 .btns{
-    margin-top: 90px;
+    margin-top: 100px;
     
 }
 
@@ -74,25 +77,31 @@ body{
     color: rgba(255, 255, 255, 0.66);
     
 }
+
 .btns>div:nth-child(3)>p{
     margin-left: 30px;
     color: rgba(255, 255, 255, 0.66);
     
 }
-
-
 #product-div{
-    border-top: 0;
-    margin-top: 30px;
+    margin-top: 10px;
+}
+
+
+#db-div{
+    border: 1px solid black;
 }
 
 
 .btn-div{
-    border:1px  solid  rgba(255, 255, 255, 0.358);
+    border:1px solid  rgba(255, 255, 255, 0.358);
     border-left: 0;
     border-right: 0;
-    border-bottom: 0;
+    border-top: 0;
     cursor: pointer;
+}
+#user-div{
+    border-top: 0;
 }
 
 #dashboard-png{
@@ -128,7 +137,7 @@ body{
 
 
 #search-box{
-    margin-left: 300px;
+    margin-left: 328px;
     width: 200px;
     padding: 10px;
     border-radius: 30px  0px 0px 30px;
