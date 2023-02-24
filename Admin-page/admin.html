@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola-Ex</title>  
+    <title>Hola-Ex</title>
     <link rel="shortcut icon" href="images/1.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
                 <div class="btn-div">
                     <p>Dashboard</p>
                 </div>
-  
+
                 <div class="btn-div">
                     <p id="user-tab">Users</p>
                 </div>
@@ -32,7 +32,7 @@
                     <p id="user-tab">Products</p>
                 </div>
 
-                
+
             </div>
 
         </div>
@@ -48,12 +48,12 @@
 
                 </div>
                 <div class="dropDown">
-                    <p>Edit Profile</p>
-                   
+                    <p id="edit-profile">Add Admin</p>
+
                     <hr>
                     <p id="logout">Logout <img src="images/logout png.png" alt="" id="logout-img"></p>
-                    
-                    
+
+
                 </div>
 
             </div>
@@ -65,8 +65,31 @@
                 <div></div>
                 <div></div>
             </div>
+
+
         </div>
+
     </main>
+    <div id="Outer-div">
+        <div id="edit-form">
+            <h2>Add New Admin</h2>
+            <hr>
+            <div id="input-fields">
+                <input type="email" id="email" placeholder="Enter Your Email">
+                <br>
+                <input type="text" id="username" placeholder="Enter Your Username">
+                <br>
+                <input type="password" id="new-password" placeholder="Enter New Password">
+                <br>
+                <input type="password" id="re-password" placeholder="Re-Enter Password">
+                <br>
+                <br>
+                <button id="save-btn">Save</button>
+            </div>
+    
+    
+        </div>
+    </div>
 
 </body>
 <script src="admin.js"></script>

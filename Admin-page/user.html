@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="user.css">
 </head>
+
 <body>
     <main class="main-section">
         <div class="side-nav">
@@ -19,7 +21,7 @@
                 <div class="btn-div">
                     <p id="db-tab">Dashboard</p>
                 </div>
-  
+
                 <div class="btn-div">
                     <p>Users</p>
                 </div>
@@ -28,7 +30,7 @@
                     <p id="pro-tab">Products</p>
                 </div>
 
-                
+
             </div>
 
         </div>
@@ -44,26 +46,58 @@
 
                 </div>
                 <div class="dropDown">
-                    <p>Edit Profile</p>
-                   
+                    <p id="edit-profile">Add Admin</p>
+
                     <hr>
                     <p id="logout">Logout <img src="images/logout png.png" alt="" id="logout-img"></p>
-                    
-                    
+
+
                 </div>
 
             </div>
 
+            
 
-            <div class="card-div-top-section">
-                <div>
-                    <h2>User-Details</h2>
-                </div>
-               
-            </div>
-        </div>
     </main>
-    
+
+    <div class="card-div-top-section">
+
+        <h2>User-Details</h2>
+
+        <div id="users">
+
+        </div>
+
+    </div>
+
+
+
+
+    </div>
+
+
+    <div id="Outer-div">
+        <div id="edit-form">
+            <h2>Add New Admin</h2>
+            <hr>
+            <div id="input-fields">
+                <input type="email" id="email" placeholder="Enter Your Email">
+                <br>
+                <input type="text" id="username" placeholder="Enter Your Username">
+                <br>
+                <input type="password" id="new-password" placeholder="Enter New Password">
+                <br>
+                <input type="password" id="re-password" placeholder="Re-Enter Password">
+                <br>
+                <br>
+                <button id="save-btn">Save</button>
+            </div>
+
+
+        </div>
+    </div>
+
 </body>
 <script src="user.js"></script>
+
 </html>

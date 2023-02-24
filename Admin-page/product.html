@@ -27,6 +27,7 @@
 
                 <div class="btn-div" id="product-div">
                     <p id="user-tab">Products</p>
+                    
                 </div>
 
                 
@@ -45,7 +46,7 @@
 
                 </div>
                 <div class="dropDown">
-                    <p>Edit Profile</p>
+                    <p id="edit-profile">Add Admin</p>
                    
                     <hr>
                     <p id="logout">Logout <img src="images/logout png.png" alt="" id="logout-img"></p>
@@ -56,14 +57,70 @@
             </div>
 
 
-            <div class="card-div-top-section">
-                <div>
-                    <h2>Products</h2>
-                </div>
-               
-            </div>
+            
         </div>
     </main>
+    <div class="card-div-top-section">
+        <div>
+            <h2>Products</h2>
+            <button id="Add-product">Add New Product</button>
+        </div>
+        <div id="pro-div">
+                
+        </div>
+
+        <div class="page-btn">
+            <button class="page-buttons">1</button>
+            <button class="page-buttons">2</button>
+            <button class="page-buttons">3</button>
+            <button class="page-buttons">4</button>
+            <button class="page-buttons">5</button>
+        </div>
+       
+    </div>
+
+    <div id="Outer-div">
+        <div id="edit-form">
+            <h2>Add New Admin</h2>
+            <hr>
+            <div id="input-fields">
+                <input type="email" id="email" placeholder="Enter Your Email">
+                <br>
+                <input type="text" id="username" placeholder="Enter Your Username">
+                <br>
+                <input type="password" id="new-password" placeholder="Enter New Password">
+                <br>
+                <input type="password" id="re-password" placeholder="Re-Enter Password">
+                <br>
+                <br>
+                <button id="save-btn">Save</button>
+            </div>
+    
+    
+        </div>
+    </div>
+
+
+    <div id="Add-new-div">
+        <div id="Add-form">
+            <h2>Add New Admin</h2>
+            <hr>
+            <div id="Add-input-fields">
+                <input type="email" id="Add-email" placeholder="Enter Your Email">
+                <br>
+                <input type="text" id="Add-username" placeholder="Enter Your Username">
+                <br>
+                <input type="password" id="Add-new-password" placeholder="Enter New Password">
+                <br>
+                <input type="password" id="Add-re-password" placeholder="Re-Enter Password">
+                <br>
+                <br>
+                <button id="Add-save-btn">Save</button>
+            </div>
+    
+    
+        </div>
+    </div>
     
 </body>
 <script src="product.js"></script>

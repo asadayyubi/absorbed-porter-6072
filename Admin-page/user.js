@@ -42,3 +42,62 @@ logout_btn.addEventListener("click",()=>{
     localStorage.clear("login")
     location.href=`admin-login.html`
 })
+
+
+let edit_form=document.getElementById("Outer-div")
+
+let email=document.getElementById("email");
+let username=document.getElementById("username")
+let New_password=document.getElementById("new-password");
+let re_password=document.getElementById("re-password");
+
+let save_Btn=document.getElementById("save-btn")
+
+let edit_Profile=document.getElementById("edit-profile");
+
+edit_Profile.addEventListener("click",()=>{
+    edit_form.style.display="block";
+    
+    save_Btn.addEventListener("click",()=>{
+        edit_form.style.display="none";
+    })
+
+})
+
+
+
+let users_Div=document.getElementById("users")
+
+fetch("https://mok-api-hola-ex.onrender.com/users")
+.then((req) => {
+    return req.json()
+})
+.then((data) => {
+    console.log(data)
+    renderData(data)
+})
+
+
+function renderData(data){
+    users_Div.innerHTML="";
+    data.forEach((ele)=>{
+        let cardDiv=document.createElement("div")
+        let name=document.createElement("h2")
+        name.innerText=ele.name;
+        let email=document.createElement("p")
+        email.innerText=ele.email
+        let number=document.createElement("p")
+        number.innerText=ele.phone;
+
+        let address=document.createElement("p")
+        address.innerText=`${ele.address.street},${ele.address.city},${ele.address.state},${ele.address.country},${ele.address.zip}`
+
+        console.log(`${ele.address.street},${ele.address.city},${ele.address.state},${ele.address.country},${ele.address.zip}`)
+
+
+        cardDiv.append(name,email,number,address)
+        users_Div.append(cardDiv)
+
+    })
+
+}

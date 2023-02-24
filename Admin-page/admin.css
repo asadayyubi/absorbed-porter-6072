@@ -28,6 +28,7 @@ body{
     display: flex;
     margin: auto;
     margin-top: 60px;
+    z-index: 0;
 }
   
 .card-div-top-section div{
@@ -93,6 +94,7 @@ body{
     border-right: 0;
     border-bottom: 0;
     cursor: pointer;
+    
 }
 
 #dashboard-png{
@@ -202,4 +204,52 @@ body{
 
 #admin-info>p{
     margin-left: 10px;
+}
+
+
+#Outer-div{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#edit-form{
+    /* display: none; */
+    width: 30%;
+    /* position: fixed; */
+    height: 500px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 45%;
+    margin-top: 120px;
+    z-index: 9999;
+}
+
+#edit-form>h2{
+    padding-top: 20px;
+    text-align: center;
+}
+
+#input-fields{
+    display: grid;
+    margin: auto;
+    padding: 50px;
+}
+#input-fields>button{
+    margin: auto;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.868);
+    color: rgba(255, 255, 255, 0.737);
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+}
+
+#input-fields>input{
+    font-size: 20px;
+    padding: 10px;
 }

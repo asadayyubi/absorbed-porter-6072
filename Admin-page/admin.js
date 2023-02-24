@@ -41,3 +41,25 @@ logout_btn.addEventListener("click",()=>{
     localStorage.clear("login")
     location.href=`admin-login.html`
 })
+
+
+
+let edit_form=document.getElementById("Outer-div")
+
+let email=document.getElementById("email");
+let username=document.getElementById("username")
+let New_password=document.getElementById("new-password");
+let re_password=document.getElementById("re-password");
+
+let save_Btn=document.getElementById("save-btn")
+
+let edit_Profile=document.getElementById("edit-profile");
+
+edit_Profile.addEventListener("click",()=>{
+    edit_form.style.display="block";
+    
+    save_Btn.addEventListener("click",()=>{
+        edit_form.style.display="none";
+    })
+
+})
