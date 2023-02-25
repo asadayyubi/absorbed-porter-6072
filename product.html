@@ -1,0 +1,105 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./product.css" />
+  </head>
+  <body>
+    <div class="image-slidshow">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img class="slideimg" src="" style="width: 100% ;height:450px" />
+         
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img class="slideimg" src="" style="width: 100%; height:450px" />
+          
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img class="slideimg" src="" style="width: 100% ; height:450px" />
+        
+        </div>
+      </div>
+      <br />
+
+      <!-- <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div> -->
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <div class="des-container">
+        <div class="left-container">
+            <div class="title-text">
+               <div class="first-div-text">
+                <div>
+                    Featured
+                </div>
+                <div>
+                    <img src="./icons8-verified-user-66.png" alt="error" height="25px">
+                    <p>Verified Seller</p>
+                </div>
+               </div>
+               <div class="second-title-text">
+                <h1 id="brand"></h1>
+                <div class="small-des">
+                    <div>
+                        <img src="https://statics.olx.in/olxin/buyers/items/v1/inspection/light/petrol_1x.svg" alt="">
+                        <p id="fuel"></p>
+                    </div>
+                    <div>
+                        <img src="https://statics.olx.in/olxin/buyers/items/v1/inspection/light/mileage_1x.svg" alt="">
+                        <p id="distance"></p>
+                    </div>
+                    <div>
+                        <img src="https://statics.olx.in/olxin/buyers/items/v1/inspection/light/transmission_1x.svg" alt="">
+                        <p id="transm"></p>
+                    </div>
+                </div>
+               </div>
+            </div>
+            <div class="third-description">
+                <div class="head-desc">
+                    <h1 style="color: #002f34; font-size: 26px; padding-left: 15px;">Description</h1>
+                </div>
+                <div class="desc-text">
+                    <div>
+                        <p id="obj-desc"></p>
+                    </div>
+                    <div class="rest-text">
+                        <p id="obj-brand"></p>
+                        <p id="obj-model"></p>
+                        <p id="obj-fuel"></p>
+                        <p id="obj-condition"></p>
+                        <p id="obj-color"></p>
+                        <p id="obj-reg"></p>
+                        <p>Power steering: Yes</p>
+                        <p>ABS: Yes</p>
+                        <p>Accidental: No</p>
+                        <p >Adjustable External Mirror: Power</p>
+                        <p id="obj-music">Music System : Sony</p>
+                        
+                        <p id="obj-tyre">Tyre Condition: New</p>
+                        <p id="obj-desc">Power Windows: Front & rear</p>
+                        <p id="obj-desc">Battery Condition: New</p>
+                        <p id="obj-desc">Air Conditioning: With Heater</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-container"></div>
+    </div>
+
+    <script src="./product.js"></script>
+  </body>
+</html>
