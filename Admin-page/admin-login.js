@@ -1,22 +1,33 @@
-let Admin = [
-    {
-        name: "Luv",
-        username: "lovkumar120169@gmail.com",
-        password: "123456789"
-    },
-    {
-        name: "Asad",
-        username: "asad@gmail.com",
-        password: "12345"
+// let Admin = [
+//     {
+//         name: "Luv",
+//         username: "lovkumar120169@gmail.com",
+//         password: "123456789"
+//     },
+//     {
+//         name: "Asad",
+//         username: "asad@gmail.com",
+//         password: "12345"
 
-    },
-    {
-        name: "Baibhav",
-        username: "baibhav@gmail.com",
-        password: "123456"
+//     },
+//     {
+//         name: "Baibhav",
+//         username: "baibhav@gmail.com",
+//         password: "123456"
 
-    }
-]
+//     }
+// ]
+
+let Admin=[];
+fetch("https://mok-api-hola-ex.onrender.com/admin")
+.then((req)=>{
+    return req.json();
+})
+.then((data)=>{
+    console.log(data)
+    Admin=data
+})
+
 
 let login_Data = JSON.parse(localStorage.getItem("login")) || []
 let email = document.getElementById("email");
@@ -41,7 +52,7 @@ login_btn.addEventListener("click", (e) => {
         }
 
         if (count > 0) {
-            alert(`Welcome ${Admin[i].name}`);
+            alert(`Welcome ${Admin[i].fullname}`);
             location.href = `admin.html`;
             break;
         }

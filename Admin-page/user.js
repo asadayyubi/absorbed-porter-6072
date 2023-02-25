@@ -83,15 +83,23 @@ function renderData(data){
     data.forEach((ele)=>{
         let cardDiv=document.createElement("div")
         let name=document.createElement("h2")
-        name.innerText=ele.name;
+        name.innerText=`Name : ${ele.name}`;
         let email=document.createElement("p")
-        email.innerText=ele.email
+        email.innerText=`Email : ${ele.email}`
         let number=document.createElement("p")
-        number.innerText=ele.phone;
+        number.innerText=`Number : ${ele.phone}`;
+        
+
+        if(ele.address.country==undefined){
+            ele.address.country="India";
+        }
+        if(ele.address.zip==undefined){
+            ele.address.zip=ele.address.pincode;
+        }
 
         let address=document.createElement("p")
-        address.innerText=`${ele.address.street},${ele.address.city},${ele.address.state},${ele.address.country},${ele.address.zip}`
-
+        address.innerText=`Address : ${ele.address.street},${ele.address.city},${ele.address.state},${ele.address.country},${ele.address.zip}`
+        
         console.log(`${ele.address.street},${ele.address.city},${ele.address.state},${ele.address.country},${ele.address.zip}`)
 
 
@@ -101,3 +109,30 @@ function renderData(data){
     })
 
 }
+
+
+
+
+let search_inp = document.getElementById("search-box");
+
+let search_btn = document.getElementById("search-btn");
+
+search_btn.addEventListener("click", () => {
+    fetch("https://mok-api-hola-ex.onrender.com/users")
+        .then((req) => {
+            return req.json()
+        })
+        .then((data) => {
+            let filtered = data.filter((element) => {
+                if (element.name.toUpperCase().includes(search_inp.value.toUpperCase()) == true || element.email.toUpperCase().includes(search_inp.value.toUpperCase()) == true) {
+                    return true;
+                }
+                else {
+                    return false
+                }
+            })
+            console.log(filtered)
+            renderData(filtered)
+        })
+
+})
