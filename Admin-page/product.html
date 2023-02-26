@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola-Ex</title>
+    <title>Hola-Ex</title>
+    <link rel="shortcut icon" href="images/1.png" type="image/x-icon">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Comfortaa:wght@700&family=Comforter+Brush&family=DM+Sans&family=Dancing+Script:wght@700&family=Fuzzy+Bubbles:wght@700&family=Heebo:wght@500&family=Martian+Mono:wght@500&family=Montserrat:wght@400;500&family=Nanum+Gothic:wght@700&family=Open+Sans:ital,wght@1,800&family=Pacifico&family=Roboto:wght@100;300;400;500&family=Silkscreen&family=Unbounded:wght@500&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <main class="main-section">
+        <div class="side-nav">
+            <img src="images/1.png" id="site-logo" alt="">
+            <div class="btns">
+                <div class="btn-div" id="db-div">
+                    <p id="db-tab">Dashboard</p>
+                </div>
+  
+                <div class="btn-div" id="user-div">
+                    <p id="">Users</p>
+                </div>
+
+                <div class="btn-div" id="product-div">
+                    <p id="user-tab">Products</p>
+                    
+                </div>
+
+                
+            </div>
+
+        </div>
+        <div class="top-nav">
+            <div>
+                <h2 class="Db">Products</h2>
+                <input type="search" name="" id="search-box" placeholder="Search">
+                <button id="search-btn">Search</button>
+
+                <div id="admin-info">
+                    <img src="images/user-png.png" alt="">
+                    <p id="Admin-name"></p>
+
+                </div>
+                <div class="dropDown">
+                    <p id="edit-profile">Add Admin</p>
+                   
+                    <hr>
+                    <p id="logout">Logout <img src="images/logout png.png" alt="" id="logout-img"></p>
+                    
+                    
+                </div>
+
+            </div>
+
+
+            
+        </div>
+    </main>
+    <div class="card-div-top-section">
+        <div>
+            <h2>Products</h2>
+            <button id="Add-product">Add New Product</button>
+        </div>
+        <div id="pro-div">
+                
+        </div>
+
+        <div class="page-btn">
+            <button class="page-buttons">1</button>
+            <button class="page-buttons">2</button>
+            <button class="page-buttons">3</button>
+            <button class="page-buttons">4</button>
+            <button class="page-buttons">5</button>
+            <button class="page-buttons">6</button>
+        </div>
+       
+    </div>
+
+    <div id="Outer-div">
+        <div id="edit-form">
+            <h2>Add New Admin</h2>
+            <hr>
+            <div id="input-fields">
+                <input type="email" id="email" placeholder="Enter Your Email">
+                <br>
+                <input type="text" id="username" placeholder="Enter Your Username">
+                <br>
+                <input type="password" id="new-password" placeholder="Enter New Password">
+                <br>
+                <input type="password" id="re-password" placeholder="Re-Enter Password">
+                <br>
+                <br>
+                <button id="save-btn">Save</button>
+            </div>
+    
+    
+        </div>
+    </div>
+
+
+    <div id="Add-new-div">
+        <div id="Add-form">
+            <h2>Edit Product</h2>
+            <hr>
+            <div id="Add-input-fields">
+                <input type="text" id="ele-id"   placeholder="Product Id">
+                <br>
+                <input type="text" id="change-model" placeholder="Change Model">
+                <br>
+                <input type="number" id="change-year" placeholder="Change Year">
+                <br>
+                <input type="number" id="Change-price" placeholder="Change_price">
+                <br>
+                <input type="text" id="Change-condition" placeholder="Change Condition">
+                <br>
+                <br>
+                <button id="Add-save-btn">Save</button>
+            </div>
+    
+    
+        </div>
+    </div>
+
+    <div id="outer-main">
+        <div id="outer-div-form">
+
+            <div id="category">
+                <h2>Add New Product</h2>
+                <p>Category</p>
+                <input type="text" id="Add-Category"  placeholder="Enter Category"/>
+             </div>
+              <!-- details -->
+              <div id="details">
+                <h3>INCLUDE SOME DETAILS</h3>
+                <form action="">
+                  <p>Brand*</p>
+                  <input type="text" id="Add-Brand" placeholder="Enter Brand"/>
+                  <p>Model*</p>
+                  <input type="text" id="Add-Model"  placeholder="Enter Model"/>
+                  <p>Color</p>
+                  <input type="text" id="Add-color" placeholder="Enter Color"/>
+                  <p>Condition</p>
+                  <input type="text" id="Add-Condition"  placeholder="Enter Condition"/>
+                  <p>KM Driven</p>
+                  <input type="text" id="Add-Km" placeholder="Enter KM Driven"/>
+                  <p>Year*</p>
+                  <input type="text" id="Add-Year" placeholder="Enter Year"/>
+                  <p>Fuel Type*</p>
+                  <input type="text" id="Add-Fuel"  placeholder="Fule Type"/>
+                  <div id="uploadImages">
+                  <p>Upload Images</p>
+                  <input type="text" id="Add-1st-Img" placeholder="Enter URL">
+                  <!-- <br>
+                  <br> -->
+                  <input type="text" id="Add-2nd-Img" placeholder="Enter URL">
+                  <br>
+                  <br>
+                  <input type="text" id="Add-3rd-Img" placeholder="Enter URL">
+                  <!-- <br>
+                  <br> -->
+                  <input type="text" id="Add-4th-Img" placeholder="Enter URL">
+                  </div>
+                  <!-- <div>
+                  <p>Transmission*</p>
+                  <button>Manual</button>
+                  <button>Automatic</button>
+                </div> -->
+                  <!-- <br /> -->
+                  <h3>SET PRICE*</h3>
+                  <p>Price</p>
+                  <input type="text" id="Add-Price" placeholder="₹ |" />
+                  <!-- <br /> -->
+                  <!-- <div>
+                  <h3>CONFIRM YOUR LOCATION</h3>
+                  <p>State*</p>
+                  <input type="text">
+                  <p>City*</p>
+                  <input type="text">
+                </div> -->
+                
+                  <div id="UserDetails">
+                    <h3>REVIEW YOUR DETAILS</h3>
+                    <p>Name*</p>
+                    <input type="text" id="Add-Name" placeholder="Enter Name"/>
+                    <p>State*</p>
+                    <input type="text" id="Add-State" placeholder="Enter State"/>
+                    <p>City*</p>
+                    <input type="text" id="Add-city" placeholder="Enter City"/>
+                    
+
+                  </div>
+                  <br />
+                  <button id="Post-Btn">POST NOW</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="product.js"></script>
+</html>

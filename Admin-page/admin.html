@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola-Ex</title>
+    <link rel="shortcut icon" href="images/1.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=Comfortaa:wght@700&family=Comforter+Brush&family=DM+Sans&family=Dancing+Script:wght@700&family=Fuzzy+Bubbles:wght@700&family=Heebo:wght@500&family=Martian+Mono:wght@500&family=Montserrat:wght@400;500&family=Nanum+Gothic:wght@700&family=Open+Sans:ital,wght@1,800&family=Pacifico&family=Roboto:wght@100;300;400;500&family=Silkscreen&family=Unbounded:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <main class="main-section">
+        <div class="side-nav">
+            <img src="images/1.png" id="site-logo" alt="">
+            <div class="btns">
+                <div class="btn-div">
+                    <p>Dashboard</p>
+                </div>
+
+                <div class="btn-div">
+                    <p id="user-tab">Users</p>
+                </div>
+
+                <div class="btn-div" id="product-div">
+                    <p id="user-tab">Products</p>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="top-nav">
+            <div>
+                <h2 class="Db">Dashboard</h2>
+                <input type="search" name="" id="search-box" placeholder="Search">
+                <button id="search-btn">Search</button>
+
+                <div id="admin-info">
+                    <img src="images/user-png.png" alt="">
+                    <p id="Admin-name"></p>
+
+                </div>
+                <div class="dropDown">
+                    <p id="edit-profile">Add Admin</p>
+
+                    <hr>
+                    <p id="logout">Logout <img src="images/logout png.png" alt="" id="logout-img"></p>
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </main>
+
+
+    <div class="card-div-top-section">
+        <div id="f-div">
+            <h1></h1>
+            <p>Total Products</p>
+        </div>
+        <div id="s-div">
+            <h1></h1>
+            <p>Pending Products</p>
+
+        </div>
+        <div id="t-div">
+            <h1></h1>
+            <p>Sold Products</p>
+        </div>
+        <div id="ft-div">
+            <h1></h1>
+            <p>Revenue Exchanged</p>
+        </div>
+    </div>
+
+
+    <div id="pro-status">
+        <h1>Information Table</h1>
+        <select name="" id="select-status">
+            <option value="">Choose Status</option>
+            <option value="unsold">Unsold</option>
+            <option value="sold">Sold</option>
+        </select>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Seller Name</th>
+                    <th>Category</th>
+                    <th>Brand</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                    <th>Year</th>
+                </tr>
+
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+    <div id="Outer-div">
+        <div id="edit-form">
+            <h2>Add New Admin</h2>
+            <hr>
+            <div id="input-fields">
+                <input type="email" id="email" placeholder="Enter Your Email">
+                <br>
+                <input type="text" id="username" placeholder="Enter Your Username">
+                <br>
+                <input type="text" id="fullname" placeholder="Enter Your Fullname">
+                <br>
+                <input type="password" id="new-password" placeholder="Enter Password">
+                <br>
+                <input type="mobile" id="mobile" placeholder="Enter Your Mobile.No">
+                <br>
+                <br>
+                <button id="save-btn">Add Admin</button>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+<script src="admin.js"></script>
+
+</html>
