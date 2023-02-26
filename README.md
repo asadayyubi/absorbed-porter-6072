@@ -1,6 +1,6 @@
 # absorbed-porter-6072
 # OLX CLONE
-![](image/11.png)
+![](https://raw.githubusercontent.com/asadayyubi/absorbed-porter-6072/main/image/11.png)
 
 
 The HOLA-EX marketplace is a platform for buying and selling pre-used goods and services such as renting or buying a flat and selling cars, bikes, furniture and electronic items. This project was assigned to :
@@ -25,15 +25,15 @@ In this project we have tried to clone the OLX website as much as possible in th
 4. Search functionality
 
 # HOME PAGE
-![Home Page](image/home_page.png)
+![Home Page](https://raw.githubusercontent.com/asadayyubi/absorbed-porter-6072/main/image/home_page.png)
 
 # CATEGORY PAGE
-![](image/category_page.png)
+![](https://raw.githubusercontent.com/asadayyubi/absorbed-porter-6072/main/image/category_page.png)
 # PRODUCT PAGE
-![](image/sellerpage.png)
+![](https://raw.githubusercontent.com/asadayyubi/absorbed-porter-6072/main/image/sellerpage.png)
 
 ## Deployed Link
-https://extraordinary-moonbeam-ea1235.netlify.app
+https://verdant-valkyrie-b3f6d0.netlify.app
 
 ### Limitations 
 Pages are not responsive, like the original website. OLX has different app focused on small screen devices.
