@@ -1,0 +1,86 @@
+ /* body{
+    border: 1px solid black;
+ } */
+
+ #mainBox{
+    /* border: 1px solid black; */
+    margin-left: 25%;
+    margin-right: 25%;
+    /* padding-left: 300px; */
+    width: 1000px;
+    margin: auto;
+ }
+ #category{
+    padding:10px;
+    border: 1px solid rgba(0, 0, 0, 0.114);
+ }
+ #details{
+    padding:10px;
+    border: 1px solid rgba(0, 0, 0, 0.114);
+ }
+
+ #UserDetails{
+    /* padding:10px; */
+    border: 1px solid rgba(0, 0, 0, 0.114);
+ }
+ h1{
+    text-align: center;
+ }
+
+ #box{
+    border: 1px solid rgba(0, 0, 0, 0.114);
+    width: 700px;
+    /* text-align: justify; */
+    /* padding-left: 20px; */
+
+    /* justify-content: center; */
+ }
+ #uploadImages{
+   
+    padding:10px;
+    border: 1px solid rgba(0, 0, 0, 0.114);
+ }
+ input{
+    width: 300px;
+    height: 40px;
+    border-radius: 3px;
+ }
+#inner{
+    padding-left: 140px;
+    padding-bottom: 10px;
+    
+}
+ input:hover{
+    border: 4px solid black;
+    background-color: rgba(192, 192, 192, 0);
+    font-weight: bolder;
+ }
+ button{
+    width: 120px;
+    background-color: white;
+    color:black;
+    height: 40px;
+    align-self: center;
+ }
+ button:hover{
+    
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+ }
+
+ /* footer */
+#foot{
+    display: flex;
+    justify-content: space-between;
+    background-color:  #085c5d;
+    color:white;
+    padding: 10px;
+    width: 100%;
+    /* border: 1px solid red; */
+    
+    /* height: 40px; */
+}
+ #foot div p{
+    text-align: justify;
+    }
