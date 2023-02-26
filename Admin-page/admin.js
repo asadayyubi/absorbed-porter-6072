@@ -65,12 +65,13 @@ edit_Profile.addEventListener("click", () => {
 
 })
 
-
+let MainData=[]
 fetch("https://mok-api-hola-ex.onrender.com/data")
     .then((req) => {
         return req.json()
     })
     .then((data) => {
+        MainData=data;
         console.log(data)
         funInner(data)
         statusData(data)
@@ -230,3 +231,37 @@ save_BtnData.addEventListener("click",()=>{
     
 
 })
+
+
+
+let select_status=document.getElementById("select-status");
+
+
+   
+    select_status.addEventListener("change",()=>{
+        if(select_status.value==""){
+            statusData(MainData)
+        }
+        else if(select_status.value=="sold"){
+            let filtered=MainData.filter((ele)=>{
+                if(ele.status=="sold"){
+                    return true
+                }
+            })
+
+            statusData(filtered)
+        }
+        else{
+            let filtered=MainData.filter((ele)=>{
+                if(ele.status=="unsold"){
+                    return true
+                }
+            })
+
+            statusData(filtered)
+
+        }
+        
+    
+    })
+

@@ -75,6 +75,7 @@
             <button class="page-buttons">3</button>
             <button class="page-buttons">4</button>
             <button class="page-buttons">5</button>
+            <button class="page-buttons">6</button>
         </div>
        
     </div>
@@ -103,16 +104,18 @@
 
     <div id="Add-new-div">
         <div id="Add-form">
-            <h2>Add New Admin</h2>
+            <h2>Edit Product</h2>
             <hr>
             <div id="Add-input-fields">
-                <input type="email" id="Add-email" placeholder="Enter Your Email">
+                <input type="text" id="ele-id"   placeholder="Product Id">
                 <br>
-                <input type="text" id="Add-username" placeholder="Enter Your Username">
+                <input type="text" id="change-model" placeholder="Change Model">
                 <br>
-                <input type="password" id="Add-new-password" placeholder="Enter New Password">
+                <input type="number" id="change-year" placeholder="Change Year">
                 <br>
-                <input type="password" id="Add-re-password" placeholder="Re-Enter Password">
+                <input type="number" id="Change-price" placeholder="Change_price">
+                <br>
+                <input type="text" id="Change-condition" placeholder="Change Condition">
                 <br>
                 <br>
                 <button id="Add-save-btn">Save</button>
@@ -122,66 +125,78 @@
         </div>
     </div>
 
-    <div id="outer-div-form">
+    <div id="outer-main">
+        <div id="outer-div-form">
 
-        <div id="category">
-            <h2>SELECT CATEGORY</h2>
-            <p>Category</p>
-            <input type="text"  placeholder="Enter Category"/>
-         </div>
-          <!-- details -->
-          <div id="details">
-            <h3>INCLUDE SOME DETAILS</h3>
-            <form action="">
-              <p>Brand*</p>
-              <input type="text" placeholder="Enter Brand"/>
-              <p>Model*</p>
-              <input type="text" placeholder="Enter Model"/>
-              <p>Color</p>
-              <input type="text" />
-              <p>Condition</p>
-              <input type="text" />
-              <p>KM Driven</p>
-              <input type="text" />
-              <p>Year*</p>
-              <input type="text" />
-              <p>Fuel Type*</p>
-              <input type="text" />
-              <div id="uploadImages">
-              <p>Upload Images</p>
-              <input type="text" placeholder="Select files">
-              <input type="text" placeholder="Select files">
-              <input type="text" placeholder="Select files">
-              <input type="text" placeholder="Select files">
-              </div>
-              <!-- <div>
-              <p>Transmission*</p>
-              <button>Manual</button>
-              <button>Automatic</button>
-            </div> -->
-              <!-- <br /> -->
-              <h3>SET PRICE*</h3>
-              <p>Price</p>
-              <input type="text" placeholder="₹ |" />
-              <!-- <br /> -->
-              <!-- <div>
-              <h3>CONFIRM YOUR LOCATION</h3>
-              <p>State*</p>
-              <input type="text">
-              <p>City*</p>
-              <input type="text">
-            </div> -->
-            
-              <div id="UserDetails">
-                <h3>REVIEW YOUR DETAILS</h3>
-                <p>Name*</p>
-                <input type="text" />
-                <p>City*</p>
-                <input type="text" />
-              </div>
-              <br />
-              <button>POST NOW</button>
-            </form>
+            <div id="category">
+                <h2>Add New Product</h2>
+                <p>Category</p>
+                <input type="text" id="Add-Category"  placeholder="Enter Category"/>
+             </div>
+              <!-- details -->
+              <div id="details">
+                <h3>INCLUDE SOME DETAILS</h3>
+                <form action="">
+                  <p>Brand*</p>
+                  <input type="text" id="Add-Brand" placeholder="Enter Brand"/>
+                  <p>Model*</p>
+                  <input type="text" id="Add-Model"  placeholder="Enter Model"/>
+                  <p>Color</p>
+                  <input type="text" id="Add-color" placeholder="Enter Color"/>
+                  <p>Condition</p>
+                  <input type="text" id="Add-Condition"  placeholder="Enter Condition"/>
+                  <p>KM Driven</p>
+                  <input type="text" id="Add-Km" placeholder="Enter KM Driven"/>
+                  <p>Year*</p>
+                  <input type="text" id="Add-Year" placeholder="Enter Year"/>
+                  <p>Fuel Type*</p>
+                  <input type="text" id="Add-Fuel"  placeholder="Fule Type"/>
+                  <div id="uploadImages">
+                  <p>Upload Images</p>
+                  <input type="text" id="Add-1st-Img" placeholder="Enter URL">
+                  <!-- <br>
+                  <br> -->
+                  <input type="text" id="Add-2nd-Img" placeholder="Enter URL">
+                  <br>
+                  <br>
+                  <input type="text" id="Add-3rd-Img" placeholder="Enter URL">
+                  <!-- <br>
+                  <br> -->
+                  <input type="text" id="Add-4th-Img" placeholder="Enter URL">
+                  </div>
+                  <!-- <div>
+                  <p>Transmission*</p>
+                  <button>Manual</button>
+                  <button>Automatic</button>
+                </div> -->
+                  <!-- <br /> -->
+                  <h3>SET PRICE*</h3>
+                  <p>Price</p>
+                  <input type="text" id="Add-Price" placeholder="₹ |" />
+                  <!-- <br /> -->
+                  <!-- <div>
+                  <h3>CONFIRM YOUR LOCATION</h3>
+                  <p>State*</p>
+                  <input type="text">
+                  <p>City*</p>
+                  <input type="text">
+                </div> -->
+                
+                  <div id="UserDetails">
+                    <h3>REVIEW YOUR DETAILS</h3>
+                    <p>Name*</p>
+                    <input type="text" id="Add-Name" placeholder="Enter Name"/>
+                    <p>State*</p>
+                    <input type="text" id="Add-State" placeholder="Enter State"/>
+                    <p>City*</p>
+                    <input type="text" id="Add-city" placeholder="Enter City"/>
+                    
+
+                  </div>
+                  <br />
+                  <button id="Post-Btn">POST NOW</button>
+                </form>
+            </div>
         </div>
     </div>
     

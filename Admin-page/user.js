@@ -33,8 +33,10 @@ let login_Data=JSON.parse(localStorage.getItem("login"))||[]
 let Admin_name=document.getElementById("Admin-name")
 
 login_Data.forEach(element => {
-    Admin_name.innerText = `Hii ${element.name}`
+    let name=element.fullname.split(" ")
+    Admin_name.innerText = `Hii ${name[0]}`
 });
+
 
 let logout_btn=document.getElementById("logout")
 

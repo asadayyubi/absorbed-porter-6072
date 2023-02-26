@@ -339,3 +339,13 @@ body{
     width: 90%;
 
 }
+
+
+#select-status{
+    font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.648);
+    padding: 10px;
+    position: relative;
+    top: -60px;
+    left: 80%;
+}
