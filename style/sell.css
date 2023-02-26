@@ -1,0 +1,54 @@
+#mainBox{
+    width: 1000px;
+    border: 2px solid rgb(141, 138, 138) ;
+}
+li{
+    height: 30px;
+    width: 400px;
+    border: 1px solid rgb(141, 138, 138);
+    /* text-align: center; */
+    display: flex;
+    padding: 10px;
+    /* padding-left: 20px; */
+
+
+}
+li img{
+    width: 10%;
+    padding-right: 10px;
+
+}
+li button{
+    margin-left: 300px;
+}
+li:hover{
+    background-color: silver;
+    border: 1px solid black;
+    font-weight: bold;
+}
+h2{
+    margin-left: 40px;
+}
+/* footer */
+#foot{
+    display: flex;
+    justify-content: space-between;
+    background-color:  #085c5d;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    /* border: 1px solid red; */
+    
+    /* height: 40px; */
+}
+#foot div p{
+text-align: justify;
+}
+#whole{
+    /* border: 1px solid black; */
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,0 +1,677 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/style/product.css" />
+  <link rel="stylesheet" href="/style/chat.css" />
+  <!-- <link rel="stylesheet" href="./style/login1.css"> -->
+  <!-- Lov goto line no-270 there you will find the popup code and in css goto style folder click on product.css on line-no 396 you wil find the popup css code -->
+
+  <style>
+    button:hover {
+      background-color: black;
+      color: white;
+      font-weight: bolder;
+    }
+
+    #innerbox img {
+      width: 40px;
+      align-self: flex-start;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header part -->
+  <header class="header">
+    <div class="navbar all-nav">
+      <img
+        src="https://raw.githubusercontent.com/asadayyubi/absorbed-porter-6072/fw24_247_Day3/landing_page%20day1/image/1.png"
+        alt="" />
+
+      <div class="country_select" id="country">
+        <div class="select">
+          <p id="text">
+            <i class="fa-ls fa-solid fa-magnifying-glass"></i> Select Your
+            Country
+          </p>
+          <i class="fa-solid fa-chevron-down" id="down"></i>
+        </div>
+
+        <ul class="option_box" id="list">
+          <li class="option" onclick="myFunction('USA')">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>USA</p>
+          </li>
+          <li class="option" onclick="myFunction('CANADA')">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>CANADA</p>
+          </li>
+          <li class="option" onclick="myFunction('AUSTRALIA')">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>AUSTRALIA</p>
+          </li>
+          <li class="option" onclick="myFunction('AFRICA')">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>AFRICA</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="search_box">
+        <input type="text" class="searchClass" id="searchId" placeholder="Find Cars, Mobile Phones and more..." />
+        <p><i class="fa-solid fa-magnifying-glass"></i></p>
+      </div>
+
+      <div class="language">
+        <p id="eng">
+          English<i class="fa-xl fa-solid fa-chevron-down" id="down"></i>
+        </p>
+        <ul class="hindi">
+          <li onclick="lang('हिन्दी')">हिन्दी</li>
+          <li onclick="lang('English')">English</li>
+        </ul>
+      </div>
+
+      <!-- <div class="message">
+                <i class="fa-regular fa-comment"></i>
+            </div>
+            <div class="message">
+                <i class="fa-lg fa-regular fa-bell"></i>
+            </div> -->
+
+      <div class="your_logo">
+        <div class="girl_img" id="girl_img" style="margin-left: 10px">
+          <p id="login" class="myBtn"><b>Login</b></p>
+        </div>
+        <!-- <a href="./land.html"></a> -->
+        <!-- <div class="dropdown" id="dropdownid">
+                <div class="name">
+                    <img src="image/pic3.jpg" alt="">
+                   <p>Alberto</p>
+                </div>
+                <ul>
+                    <li>
+                       <i class="fa fa-regular fa-user"></i> 
+                       <p>My Account</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-box"></i>
+                        <p>My Orders</p>
+                     </li>
+                     <li>
+                        <i class="fa fa-regular fa-circle-question"></i> 
+                        <p>Help</p>
+                     </li>
+                     <li>
+                        <i class="fa fa-solid fa-gear"></i> 
+                        <p>Setting</p>
+                     </li>
+                     <li>
+                        <i class="fa fa-right-from-bracket"></i> 
+                        <p>Log Out</p>
+                     </li>
+                </ul>
+            </div> -->
+      </div>
+      <div class="selling">
+        <a href="./sell.html" style="text-decoration: none">
+          <button>
+            <i class="fa-solid fa-plus"></i>
+            <p>SELL</p>
+          </button>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div id="premenu">
+    <div id="all_categories">
+      <p>ALL CATEGORIES <i id="down" class="fa-solid fa-chevron-down"></i></p>
+    </div>
+    <div>
+      <p id="car">Cars</p>
+      <p>Motorcycles</p>
+      <p>Mobile Phones</p>
+      <p>For Sale: Houses & Apartments</p>
+      <p>Scooters</p>
+      <p>Commercial & Other Vehicles</p>
+      <p>For Rent: Houses & Apartments</p>
+    </div>
+  </div>
+  <div class="box">
+    <div>
+      <i class="fa-xl fa-solid fa-circle-xmark"></i>
+      Login First
+    </div>
+  </div>
+
+  <div class="menu" id="menu">
+    <div class="properties">
+      <ul>
+        <h3><b>Properties</b></h3>
+        <li>
+          <p>For Sale:Houses & apartments</p>
+        </li>
+        <li>
+          <p>For Rent : Houses & Apartments</p>
+        </li>
+        <li>
+          <p>Lands & Plots</p>
+        </li>
+        <li>
+          <p>For Rent: Shops & Offices</p>
+        </li>
+        <li>
+          <p>For Sale: Shops & Offices</p>
+        </li>
+        <li>
+          <p>PG & Guest Houses</p>
+        </li>
+      </ul>
+    </div>
+    <div class="properties">
+      <ul>
+        <h3><b>Mobiles</b></h3>
+        <li>
+          <p>Mobile Phones</p>
+        </li>
+        <li>
+          <p>Accessories</p>
+        </li>
+        <li>
+          <p>Tablets</p>
+        </li>
+      </ul>
+    </div>
+    <div class="properties">
+      <ul>
+        <h3><b>Jobs</b></h3>
+        <li>
+          <p>Data Entry & Back Office</p>
+        </li>
+        <li>
+          <p>Sales & Marketing</p>
+        </li>
+        <li>
+          <p>BPO & Telecaller</p>
+        </li>
+        <li>
+          <p>Driver</p>
+        </li>
+        <li>
+          <p>Office Assistant</p>
+        </li>
+        <li>
+          <p>Delivery & Collection</p>
+        </li>
+        <li>
+          <p>Teacher</p>
+        </li>
+        <li>
+          <p>Cook</p>
+        </li>
+      </ul>
+    </div>
+    <div class="properties">
+      <ul>
+        <h3><b>Bikes</b></h3>
+        <li>
+          <p>Motorcycles</p>
+        </li>
+        <li>
+          <p>Scooters</p>
+        </li>
+        <li>
+          <p>Spare Parts</p>
+        </li>
+        <li>
+          <p>Bicycles</p>
+        </li>
+      </ul>
+    </div>
+    <div class="properties">
+      <ul>
+        <h3><b>Electronics & Appliances</b></h3>
+        <li>
+          <p>TVs,Video-Audio</p>
+        </li>
+        <li>
+          <p>Kitchen & Other Appliances</p>
+        </li>
+        <li>
+          <p>Computers & Laptops</p>
+        </li>
+        <li>
+          <p>Cameras & Lenses</p>
+        </li>
+        <li>
+          <p>Games & Entertainment</p>
+        </li>
+        <li>
+          <p>Fridges</p>
+        </li>
+        <li>
+          <p>Computer Accessories</p>
+        </li>
+        <li>
+          <p>Hard Disks, Printer & Monitors</p>
+        </li>
+        <li>
+          <p>ACs</p>
+        </li>
+        <li>
+          <p>Washing Machine</p>
+        </li>
+      </ul>
+    </div>
+    <div class="properties">
+      <ul>
+        <h3><b>Commercial Vehicles & Spares</b></h3>
+        <li>
+          <p>Commercial & Other Vehicles</p>
+        </li>
+        <li>
+          <p>Spare Parts</p>
+        </li>
+      </ul>
+    </div>
+    <div class="properties">
+      <ul>
+        <h3><b>Furniture</b></h3>
+        <li>
+          <p>Sofa & Dining</p>
+        </li>
+        <li>
+          <p>Beds & Wardrobes</p>
+        </li>
+        <li>
+          <p>Home Decor & Garden</p>
+        </li>
+        <li>
+          <p>Kids Furniture</p>
+        </li>
+        <li>
+          <p>Other Household Items</p>
+        </li>
+      </ul>
+    </div>
+    <div class="properties">
+      <ul>
+        <h3><b>Fashion</b></h3>
+        <li>
+          <p>Men</p>
+        </li>
+        <li>
+          <p>Women</p>
+        </li>
+        <li>
+          <p>Kids</p>
+        </li>
+      </ul>
+    </div>
+    <div class="properties">
+      <ul>
+        <h3><b>Books,Sports & Hobbies</b></h3>
+        <li>
+          <p>Books</p>
+        </li>
+        <li>
+          <p>Gym & Fitness</p>
+        </li>
+        <li>
+          <p>Musical Instruments</p>
+        </li>
+        <li>
+          <p>Sports Equipment</p>
+        </li>
+        <li>
+          <p>Other Hobbies</p>
+        </li>
+      </ul>
+    </div>
+    <div class="properties">
+      <ul>
+        <h3><b>Pets</b></h3>
+        <li>
+          <p>Fishes & Aquarium</p>
+        </li>
+        <li>
+          <p>Pet Food & Accessories</p>
+        </li>
+        <li>
+          <p>Dogs</p>
+        </li>
+        <li>
+          <p>Other Pets</p>
+        </li>
+      </ul>
+    </div>
+    <div class="properties">
+      <ul>
+        <h3><b>Fashion</b></h3>
+        <li>
+          <p>Men</p>
+        </li>
+        <li>
+          <p>Women</p>
+        </li>
+        <li>
+          <p>Kids</p>
+        </li>
+      </ul>
+    </div>
+    <div class="properties">
+      <ul>
+        <h3><b>Services</b></h3>
+        <li>
+          <p>Electronics & Computer</p>
+        </li>
+        <li>
+          <p>Education & Classes</p>
+        </li>
+        <li>
+          <p>Drivers & Taxi</p>
+        </li>
+        <li>
+          <p>Health & BEauty</p>
+        </li>
+        <li>
+          <p>Other Services</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- ---------modal part-------- -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content" id="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="login-name">Login Form</h2>
+
+      <div id="main">
+        <div id="innerbox"> <img
+            src="https://png.pngtree.com/png-vector/20190412/ourlarge/pngtree-vector-back-icon-png-image_931209.jpg"
+            alt="">
+        </div>
+        <!-- slider -->
+        <div id="slide">
+          <img src="./img1.png" alt="">
+        </div>
+        <!-- buttons -->
+        <div>
+          <form action="">
+
+            <div class="inp">
+              <input type="text" placeholder="Continue with Phone">
+            </div>
+            <br>
+            <div class="inp">
+              <input type="text" placeholder="Continue with Email ">
+            </div>
+            <br>
+            <div id="lef">
+              <a id="login-btn-form" href="./login2.html">Login</a>
+              <br>
+              <p>OR</p>
+              <p>New user?</p>
+              <a href="/register/Registeration.html">Register Here</a>
+              <br>
+              <p>All your personal details are safe with us.</p>
+              <p>If you continue, you are accepting OLX Terms and Conditions and Privacy Policy</p>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+  </div>
+
+
+
+  <!-- product slider -->
+  <div class="image-slidshow">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img class="slideimg" src="" style="width: 100%; height: 450px" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img class="slideimg" src="" style="width: 100%; height: 450px" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img class="slideimg" src="" style="width: 100%; height: 450px" />
+      </div>
+    </div>
+    <br />
+
+    <!-- <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div> -->
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
+
+  <!-- ------------product description ----------- -->
+  <div class="des-container">
+    <div class="left-container">
+      <div class="title-text">
+        <div class="first-div-text">
+          <div>Featured</div>
+          <div>
+            <img src="./image/icons8-verified-user-66.png" alt="error" height="25px" />
+            <p>Verified Seller</p>
+          </div>
+        </div>
+        <div class="second-title-text">
+          <h1 id="brand"></h1>
+          <div class="small-des">
+            <div>
+              <img src="https://statics.olx.in/olxin/buyers/items/v1/inspection/light/petrol_1x.svg" alt="" />
+              <p id="fuel"></p>
+            </div>
+            <div>
+              <img src="https://statics.olx.in/olxin/buyers/items/v1/inspection/light/mileage_1x.svg" alt="" />
+              <p id="distance"></p>
+            </div>
+            <div>
+              <img src="https://statics.olx.in/olxin/buyers/items/v1/inspection/light/transmission_1x.svg" alt="" />
+              <p id="transm"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="third-description">
+        <div class="head-desc">
+          <h1 style="color: #002f34; font-size: 26px; padding-left: 15px">
+            Description
+          </h1>
+        </div>
+        <div class="desc-text">
+          <div>
+            <p id="obj-desc"></p>
+          </div>
+          <div class="rest-text">
+            <p id="obj-brand"></p>
+            <p id="obj-model"></p>
+            <p id="obj-fuel"></p>
+            <p id="obj-condition"></p>
+            <p id="obj-color"></p>
+            <p id="obj-reg"></p>
+            <p>Power steering: Yes</p>
+            <p>ABS: Yes</p>
+            <p>Accidental: No</p>
+            <p>Adjustable External Mirror: Power</p>
+            <p id="obj-music">Music System : Sony</p>
+
+            <p id="obj-tyre">Tyre Condition: New</p>
+            <p id="obj-desc">Power Windows: Front & rear</p>
+            <p id="obj-desc">Battery Condition: New</p>
+            <p id="obj-desc">Air Conditioning: With Heater</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <div class="product-price">
+        <h1 id="price-text-right">10000000</h1>
+        <button id="buy">Make offer</button>
+      </div>
+      <!-- chatbox container -->
+      <div class="chat-box-container1">
+        <div class="chatbox-wrapper">
+          <!-- <div class="chatbox-toggle">
+                      <i class="bx bx-message-dots"></i>
+                    </div> -->
+          <div class="chatbox-message-wrapper">
+            <div class="chatbox-message-header">
+              <div class="chatbox-message-profile">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpqdsrYfyn_O5le64oQbJvULAkU7nnafxP_g&usqp=CAU"
+                  alt="" class="chatbox-message-image" />
+                <div>
+                  <h4 class="chatbox-message-name" id="user-name-obj"></h4>
+                  <p class="chatbox-message-status">online</p>
+                </div>
+              </div>
+              <div class="chatbox-message-dropdown">
+                <i class="bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle"></i>
+                <ul class="chatbox-message-dropdown-menu">
+                  <li>
+                    <a href="#">Delete</a>
+                  </li>
+                  <li>
+                    <a href="#">Report</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="chatbox-message-content">
+              <h4 class="chatbox-message-no-message">
+                You don't have message yet!
+              </h4>
+              <!-- <div class="chatbox-message-item sent">
+                                  <span class="chatbox-message-item-text">
+                                      Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Quod, fugiat?
+                                  </span>
+                                  <span class="chatbox-message-item-time">08:30</span>
+                              </div>
+                              <div class="chatbox-message-item received">
+                                  <span class="chatbox-message-item-text">
+                                      Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Quod, fugiat?
+                                  </span>
+                                  <span class="chatbox-message-item-time">08:30</span>
+                              </div> -->
+            </div>
+            <div class="chatbox-message-bottom">
+              <form action="#" class="chatbox-message-form">
+                <textarea rows="1" placeholder="Type message..." class="chatbox-message-input"></textarea>
+                <button type="submit" class="chatbox-message-submit">
+                  <i class="bx bx-send"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sold-btn">
+        <button id="sell-btn">Sell</button>
+      </div>
+      <div class="map">
+        <h3>Posted At</h3>
+        <p id="loc">delhi</p>
+        <img src="./image/map.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!--------------- footer---------------- -->
+
+  <div class="download_app">
+    <div class="download">
+      <img
+        src="https://raw.githubusercontent.com/asadayyubi/absorbed-porter-6072/Day1_Baibhav/landing_page%20day1/image/footar.jpg"
+        class="image" alt="" />
+      <div class="text" id="cap">
+        <h1>TRY THE OLX APP</h1>
+        <p>
+          Buy, sell and find just about anything using <br />
+          the app on your mobile.
+        </p>
+      </div>
+      <div class="download_store">
+        <p>GET YOUR APP TODAY</p>
+        <img
+          src="https://raw.githubusercontent.com/asadayyubi/absorbed-porter-6072/Day1_Baibhav/landing_page%20day1/image/play%20store.png"
+          alt="" />
+      </div>
+    </div>
+  </div>
+
+  <footer class="main_footer">
+    <div class="footer">
+      <div class="footer_box">
+        <h2>POPULAR LOCATIONS</h2>
+        <p>Kolkata</p>
+        <p>Mumbai</p>
+        <p>Chennai</p>
+        <p>Pune</p>
+      </div>
+      <div class="footer_box">
+        <h2>TRENDING LOCATIONS</h2>
+        <p>Bhubaneshwar</p>
+        <p>Hyderabad</p>
+        <p>Chandigarh</p>
+        <p>Nashik</p>
+      </div>
+      <div class="footer_box">
+        <h2>ABOUT US</h2>
+        <p>About OLX Group</p>
+        <p>Careers</p>
+        <p>Contact Us</p>
+        <p>Waah Jobs</p>
+      </div>
+      <div class="footer_box">
+        <h2>OLX</h2>
+        <p>Help</p>
+        <p>Sitemap</p>
+        <p>Blog</p>
+        <p>OLX Autos Sell Car</p>
+      </div>
+      <div>
+        <h2>FOLLOW US</h2>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-google-play"></i>
+        <br />
+        <img style="width: 80px"
+          src="https://raw.githubusercontent.com/asadayyubi/absorbed-porter-6072/Day1_Baibhav/landing_page%20day1/image/play%20store.png"
+          alt="" />
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script/product.js"></script>
+  <script src="/script/chat.js"></script>
+</body>
+
+</html>

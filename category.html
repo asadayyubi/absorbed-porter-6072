@@ -1,0 +1,372 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hola-Ex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./style/category.css" />
+  </head>
+  <body>
+    <!-- header part -->
+    <header class="header">
+        <div class="navbar all-nav">
+            <img src="https://raw.githubusercontent.com/asadayyubi/absorbed-porter-6072/fw24_247_Day3/landing_page%20day1/image/1.png" alt="">
+
+            <div class="country_select" id="country">
+                <div class="select">
+                    <p id="text"><i class="fa-ls fa-solid fa-magnifying-glass"></i> Select Your Country</p>
+                    <i class="fa-solid fa-chevron-down" id="down"></i>
+                </div>
+
+                <ul class="option_box" id="list">
+                    <li class="option" onclick="myFunction('USA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>USA</p>
+                    </li>
+                    <li class="option" onclick="myFunction('CANADA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>CANADA</p>
+                    </li>
+                    <li class="option" onclick="myFunction('AUSTRALIA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>AUSTRALIA</p>
+                    </li>
+                    <li class="option" onclick="myFunction('AFRICA')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>AFRICA</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="search_box">
+                <input type="text" class="searchClass" id="searchId" placeholder="Find Cars, Mobile Phones and more...">
+                <p><i class="fa-solid fa-magnifying-glass"></i></p>
+            </div>
+
+            <div class="language">
+                <p id="eng">English<i class="fa-xl fa-solid fa-chevron-down" id="down"></i></p>
+                <ul class="hindi">
+                    <li onclick="lang('हिन्दी')">हिन्दी</li>
+                    <li onclick="lang('English')">English</li>
+                </ul>
+            </div>
+
+            <!-- <div class="message">
+                <i class="fa-regular fa-comment"></i>
+            </div>
+            <div class="message">
+                <i class="fa-lg fa-regular fa-bell"></i>
+            </div> -->
+
+            <div  class="your_logo">
+                <div class="girl_img" id="girl_img">
+                    <p id="login"><a href="./land.html"><b>Login</b></a> </p>
+                </div>
+
+            <!-- <div class="dropdown" id="dropdownid">
+                <div class="name">
+                    <img src="image/pic3.jpg" alt="">
+                   <p>Alberto</p>
+                </div>
+                <ul>
+                    <li>
+                       <i class="fa fa-regular fa-user"></i> 
+                       <p>My Account</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-box"></i>
+                        <p>My Orders</p>
+                     </li>
+                     <li>
+                        <i class="fa fa-regular fa-circle-question"></i> 
+                        <p>Help</p>
+                     </li>
+                     <li>
+                        <i class="fa fa-solid fa-gear"></i> 
+                        <p>Setting</p>
+                     </li>
+                     <li>
+                        <i class="fa fa-right-from-bracket"></i> 
+                        <p>Log Out</p>
+                     </li>
+                </ul>
+            </div> -->
+        </div>
+            <div class="selling">
+                <button><i class="fa-solid fa-plus"></i>
+                <p>SELL</p>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="premenu">
+    <div id="all_categories"><p > ALL CATEGORIES  <i id="down" class="fa-solid fa-chevron-down" ></i></p></div>
+    <div>
+    <p id="car">Cars</p>
+    <p>Motorcycles</p>
+    <p>Mobile Phones</p>
+    <p>For Sale: Houses & Apartments</p>
+    <p>Scooters</p>
+    <p>Commercial & Other Vehicles</p>
+    <p>For Rent: Houses & Apartments</p>
+    </div>
+    </div>
+    <div class="box">
+        <div>
+        <i class="fa-xl fa-solid fa-circle-xmark"></i>
+        Login First
+        </div>
+    </div>
+
+
+    <div class="menu" id="menu">
+        <div class="properties">
+            <ul><h3><b>Properties</b></h3>
+            <li><p>For Sale:Houses & apartments</p></li>
+            <li><p>For Rent : Houses & Apartments</p></li>
+            <li><p>Lands & Plots</p></li>
+            <li><p>For Rent: Shops & Offices</p></li>
+            <li><p>For Sale: Shops & Offices</p></li>
+            <li><p>PG & Guest Houses</p></li>
+            </ul>
+        </div>
+        <div class="properties">
+            <ul>
+                <h3><b>Mobiles</b></h3>
+                <li><p>Mobile Phones</p></li>
+                <li><p>Accessories</p></li>
+                <li><p>Tablets</p></li>
+            </ul>
+        </div>
+        <div class="properties">
+            <ul><h3><b>Jobs</b></h3>
+            <li><p>Data Entry & Back Office</p></li>
+            <li><p>Sales & Marketing</p></li>
+            <li><p>BPO & Telecaller</p></li>
+            <li><p>Driver</p></li>
+            <li><p>Office Assistant</p></li>
+            <li><p>Delivery & Collection</p></li>
+            <li><p>Teacher</p></li>
+            <li><p>Cook</p></li>
+            </ul>
+        </div>
+        <div class="properties">
+            <ul><h3><b>Bikes</b></h3>
+            <li><p>Motorcycles</p></li>
+            <li><p>Scooters</p></li>
+            <li><p>Spare Parts</p></li>
+            <li><p>Bicycles</p></li>
+            </ul>
+        </div>
+        <div class="properties">
+            <ul><h3><b>Electronics & Appliances</b></h3>
+            <li><p>TVs,Video-Audio</p></li>
+            <li><p>Kitchen & Other Appliances</p></li>
+            <li><p>Computers & Laptops</p></li>
+            <li><p>Cameras & Lenses</p></li>
+            <li><p>Games & Entertainment</p></li>
+            <li><p>Fridges</p></li>
+            <li><p>Computer Accessories</p></li>
+            <li><p>Hard Disks, Printer & Monitors</p></li>
+            <li><p>ACs</p></li>
+            <li><p>Washing Machine</p></li>
+            </ul>
+        </div>
+        <div class="properties">
+            <ul><h3><b>Commercial Vehicles & Spares</b></h3>
+            <li><p>Commercial & Other Vehicles</p></li>
+            <li><p>Spare Parts</p></li>
+            </ul>
+        </div>
+        <div class="properties">
+            <ul><h3><b>Furniture</b></h3>
+            <li><p>Sofa & Dining</p></li>
+            <li><p>Beds & Wardrobes</p></li>
+            <li><p>Home Decor & Garden</p></li>
+            <li><p>Kids Furniture</p></li>
+            <li><p>Other Household Items</p></li>
+            </ul>
+        </div>
+        <div class="properties">
+            <ul><h3><b>Fashion</b></h3>
+            <li><p>Men</p></li>
+            <li><p>Women</p></li>
+            <li><p>Kids</p></li>
+            </ul>
+        </div>
+        <div class="properties">
+            <ul><h3><b>Books,Sports & Hobbies</b></h3>
+            <li><p>Books</p></li>
+            <li><p>Gym & Fitness</p></li>
+            <li><p>Musical Instruments</p></li>
+            <li><p>Sports Equipment</p></li>
+            <li><p>Other Hobbies</p></li>
+            </ul>
+        </div>
+        <div class="properties">
+            <ul><h3><b>Pets</b></h3>
+            <li><p>Fishes & Aquarium</p></li>
+            <li><p>Pet Food & Accessories</p></li>
+            <li><p>Dogs</p></li>
+            <li><p>Other Pets</p></li>
+            </ul>
+        </div>
+        <div class="properties">
+            <ul><h3><b>Fashion</b></h3>
+            <li><p>Men</p></li>
+            <li><p>Women</p></li>
+            <li><p>Kids</p></li>
+            </ul>
+        </div>
+        <div class="properties">
+            <ul><h3><b>Services</b></h3>
+            <li><p>Electronics & Computer</p></li>
+            <li><p>Education & Classes</p></li>
+            <li><p>Drivers & Taxi</p></li>
+            <li><p>Health & BEauty</p></li>
+            <li><p>Other Services</p></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- product part -->
+    <div class="header-text">
+      <h1 style="color: #002f34; width: 93%; margin: auto; margin-bottom: 25px; margin-top: 20px;">Buy & Sell Used Cars in India</h1>
+    </div>
+    <div class="main-container">
+      <div class="sidebar-filter">
+        <div class="filter-brand">
+          <p>BRAND AND MODEL</p>
+          <input
+            type="text"
+            id="brand-input"
+            class="brand-input"
+            placeholder="Search brand or model"
+          />
+            <button class="brand-search-btn" id="search-btn">Search</button>
+          <!-- popular brands -->
+          <p style="color: #002f34; font-weight: 700;">POPULAR BRANDS</p>
+          <div class="brand-img">
+            <img
+              src="https://rukminim1.flixcart.com/image/416/416/laptop-skin-decal/a/5/8/15-6-shopnow-mahindra-logo-original-imae5p68mn8xhhew.jpeg?q=70"
+              alt="error"
+            />
+            <img
+              src="https://i.pinimg.com/originals/84/74/ba/8474bab344b6509e973b3d3f0260c2ca.jpg"
+              alt="error"
+            />
+            <img
+              src="https://www.carlogos.org/logo/Kia-logo-2560x1440.png"
+              alt="error"
+            />
+            <img
+              src="https://cdn1.wattev2buy.com/wp-content/uploads/2019/06/27160255/Hyundai-logo-evgenius-clear-bg-200.png"
+              alt="error"
+            />
+            <img
+              src="https://media.licdn.com/dms/image/C560BAQGu96DNscbm9Q/company-logo_200_200/0/1519912842999?e=2147483647&v=beta&t=jUW94Q_YQJZzaLSdt-l-4SWGyoKJ9sxE1wuHaJ8Es5U"
+              alt="error"
+            />
+            <img
+              src="https://freepngimg.com/thumb/categories/346.png"
+              alt="error"
+            />
+          </div>
+        </div>
+        <hr class="style-hr">
+        <div class="filter-budget filter-brand">
+            <p class="style-p">BUDGET</p>
+            <p class="style-p-small">Choose from options below</p>
+            <div class="budget-range" data-id="1">Below 1 Lac</div>
+            <div class="budget-range" data-id="2">1 Lac - 2 Lac</div>
+            <div class="budget-range"data-id="3">3 Lac - 5 Lac</div>
+            <div class="budget-range" data-id="4">5 Lac and 2 Above</div>
+        </div>
+        <hr class="style-hr">
+        <div class="filter-budget filter-brand">
+            <p class="style-p">KM DRIVEN</p>
+            <p class="style-p-small">Choose from options below (km)</p>
+            <div class="budget-km" data-id="1">Below 25000 km</div>
+            <div class="budget-km" data-id="2">25000 km - 50000 km</div>
+            <div class="budget-km"data-id="3">50000 km - 75000 km</div>
+            <div class="budget-km" data-id="4">75000 km and 2 Above</div>
+        </div>
+
+        <hr class="style-hr">
+        <div class="filter-budget filter-brand">
+            <p class="style-p">TRANSMISSION</p>
+            <p class="style-p-small">Choose from options below</p>
+            <div class="budget-trans" data-id="1">Automatic</div>
+            <div class="budget-trans" data-id="2">Manual</div>
+        </div>
+      </div>
+
+      <div class="product-car-container">
+
+      </div>
+    </div>
+
+    <!--------------- footer---------------- -->
+
+    <div class="download_app">
+        <div class="download">
+            <img src="https://raw.githubusercontent.com/asadayyubi/absorbed-porter-6072/Day1_Baibhav/landing_page%20day1/image/footar.jpg" class="image" alt="">
+            <div class="text">
+                <h1>TRY THE OLX APP</h1>
+                <p>Buy, sell and find just about anything using <br> the app on your mobile.</p>
+            </div>
+            <div class="download_store">
+                <p>GET YOUR APP TODAY</p>
+                <img src="https://raw.githubusercontent.com/asadayyubi/absorbed-porter-6072/Day1_Baibhav/landing_page%20day1/image/play%20store.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer class="main_footer">
+        <div class="footer">
+            <div class="footer_box">
+                <h2>POPULAR LOCATIONS</h2>
+                <P>Kolkata</P>
+                <p>Mumbai</p>
+                <p>Chennai</p>
+                <p>Pune</p>
+            </div>
+            <div class="footer_box">
+                <h2>TRENDING LOCATIONS</h2>
+                <P>Bhubaneshwar</P>
+                <p>Hyderabad</p>
+                <p>Chandigarh</p>
+                <p>Nashik</p>
+            </div>
+            <div class="footer_box">
+                <h2>ABOUT US</h2>
+                <P>About OLX Group</P>
+                <p>Careers</p>
+                <p>Contact Us</p>
+                <p>Waah Jobs</p>
+            </div>
+            <div class="footer_box">
+                <h2>OLX</h2>
+                <P>Help</P>
+                <p>Sitemap</p>
+                <p>Blog</p>
+                <p>OLX Autos Sell Car</p>
+            </div>
+            <div>
+                <h2>FOLLOW US</h2>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google-play"></i>
+            <br>
+                <img style="width:80px" src="https://raw.githubusercontent.com/asadayyubi/absorbed-porter-6072/Day1_Baibhav/landing_page%20day1/image/play%20store.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./script/category.js"></script>
+  </body>
+</html>
